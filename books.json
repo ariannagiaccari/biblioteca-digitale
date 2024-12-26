@@ -3,7 +3,7 @@
       "title": "To Kill a Mockingbird",
       "author": "Harper Lee",
       "genre": "Fiction",
-      "copies": 0
+      "copies": 2000
     },
     {
       "title": "1984",
@@ -51,7 +51,7 @@
       "title": "The Hobbit",
       "author": "J.R.R. Tolkien",
       "genre": "Fantasy",
-      "copies": 7500
+      "copies": 0
     },
     {
       "title": "Crime and Punishment",
@@ -105,7 +105,7 @@
       "title": "The Hunger Games",
       "author": "Suzanne Collins",
       "genre": "Dystopian",
-      "copies": 9500
+      "copies": 0
     },
     {
       "title": "A Game of Thrones",
