@@ -1,1 +1,0 @@
-<!-- gestione di prenotazione dei libri  -->

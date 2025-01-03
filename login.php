@@ -22,25 +22,28 @@ $_SESSION  memorizes data for the user session. keeps the info between pages, li
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles\style.css">
     <title>Login</title>
 </head>
 
 <body>
-    <div>
-        <h2>Login</h2>
+    <div class="login-area">
+      
+        
         <form method="post">
+              <h2>Login</h2>
             <label for="username">username:</label>
             <input type="text" name="username">
             <label for="password">password:</label>
             <input type="password" name="password">
             <button type="submit">login</button>
         </form>
-    </div>
-    <!-- shows the error message if credentials are wrong -->
-    <?php if (isset($error)) // isset($var) is a function that verifies if a var was defined and is not null
-            echo "<p> $error </p>"
-                ?>
+
+        <!-- shows the error message if credentials are wrong -->
+        <?php if (isset($error)) // isset($var) is a function that verifies if a var was defined and is not null
+                echo "<p> $error </p>"
+                    ?>
+        </div>
     </body>
 
     </html>
