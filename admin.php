@@ -34,8 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 
 <body>
-    <div class="reserved-area">
-      
+    <div class="reserved-area">   
         
         <form method="post"> 
              <h1>Reserved area</h1>
@@ -43,14 +42,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <label for="title">title:</label>
             <input type="text" name='title'>
             <label for="author">author:</label>
-            <input type="text" name='author'>
-        
-            
+            <input type="text" name='author'>      
             <label for="genre">genre:</label>
             <input type="text" name='genre'>
             <label for="copies">copies:</label>
             <input type="number" name='copies'>
-        
             <button type="submit">add book:</button>
             <?php if (isset($message))
                 echo "<p> $message </p>" ?>
