@@ -1,10 +1,18 @@
-<!DOCTYPE html>
+<?php
+	require_once __DIR__ . '/conf/config.php';
+
+	if ($_SESSION['logged_in']) {
+		header('Location: /admin.php');
+		exit;
+	}
+
+	$metaTitle = '';
+?><!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Biblioteca Digitale</title>
-    <link rel="stylesheet" href="styles\style.css" />
+<head>
+<?php
+    include __DIR__ . '/inc/head.php';
+?>
   </head>
   <body>
     <div>

@@ -1,9 +1,12 @@
 <?php
-session_start();
-if (!isset($_SESSION['logged_in'])) { //checks if the user is authenticated, if logged in is false (!isset) the user will be sent to the login page
-    header('Location: login.php');
-    exit;
-}
+	require_once __DIR__ . '/conf/config.php';
+	if (!$_SESSION['logged_in']) {
+    	header('Location: login.php');
+    	exit;
+    }
+
+	$metaTitle = 'Admin';
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $books = json_decode(file_get_contents('books.json'), true);
     //  json_decode (..., true) converts the json string into a php associative array. the True param makes sure the result is an array and not an obj
@@ -27,10 +30,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles\style.css">
-    <title>Reserved area</title>
+<?php
+    include __DIR__ . '/inc/head.php';
+?>
 </head>
 
 <body>
